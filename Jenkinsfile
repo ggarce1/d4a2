@@ -1,8 +1,6 @@
 pipeline{
-	agent any
-// -- Descarga código desde SCM
-   echo 'Descargando código de SCM'
-   checkout scm
+checkout scm	
+agent any
 	stages{
 		stage('Initial Setup'){
 			steps{
