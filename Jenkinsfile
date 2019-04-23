@@ -15,7 +15,7 @@ pipeline{
 				sh 'sudo docker ps'
 			}
 		}
-`		stage('Build Docker'){
+		stage('Build Docker'){
 			steps{
 				sh 'sudo docker build -t nuevaImagen:v1 .'
 			}
